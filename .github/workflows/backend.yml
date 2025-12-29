@@ -5,6 +5,8 @@ on:
     branches: [ main ]
     paths:
       - "crc-function-backend/**"
+  workflow_dispatch:
+
 
 jobs:
   deploy:
