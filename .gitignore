@@ -9,3 +9,4 @@ local.settings.json
 # OS
 .DS_Store
 .vscode/
+.terraform*
