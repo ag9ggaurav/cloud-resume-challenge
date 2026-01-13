@@ -185,6 +185,28 @@ footer a:hover {
   }
 }
 
+/* Print button / header actions */
+.header-actions {
+  margin-top: 0.75rem;
+}
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #2c3e50;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.btn:hover { transform: translateY(-2px); }
+
+@media print {
+  .btn, .header-actions, footer { display: none !important; }
+  body { background: white; }
+}
+
 footer a:hover {
   text-decoration: underline;
 }
