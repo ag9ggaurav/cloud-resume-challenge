@@ -13,7 +13,7 @@ const path = require('path');
     await page.emulateMediaType('print');
 
     const outPath = path.join(__dirname, 'Abhishek-resume.pdf');
-    await page.pdf({ path: outPath, format: 'A4', printBackground: true, margin: { top: '12mm', bottom: '12mm', left: '12mm', right: '12mm' } });
+    await page.pdf({ path: outPath, printBackground: true, preferCSSPageSize: true });
 
     console.log('PDF generated at:', outPath);
     await browser.close();

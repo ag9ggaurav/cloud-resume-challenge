@@ -1,28 +1,28 @@
 /* Print-specific stylesheet for printable.html */
-@page { size: A4; margin: 18mm; }
+@page { size: A4; margin: 12mm; }
 html, body { height: 100%; background: #fff; color: #111; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12.6px; line-height: 1.35; }
-.resume { width: 100%; max-width: 800px; margin: 0 auto; }
-.r-header { text-align: left; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-bottom: 10px; }
-.r-name { font-size: 22px; font-weight: 700; }
-.r-title { font-size: 12px; color: #333; margin-top: 4px; }
-.r-contact { font-size: 11px; color: #222; margin-top: 6px; }
-.r-section { margin-top: 12px; }
-.r-section h2 { font-size: 13px; margin: 0 0 6px 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #111; }
+.resume { width: 100%; max-width: 190mm; margin: 0 auto; padding: 6mm 8mm; }
+.r-header { text-align: left; border-bottom: 1px solid #e0e0e0; padding-bottom: 6px; margin-bottom: 8px; }
+.r-name { font-size: 20px; font-weight: 700; }
+.r-title { font-size: 11.5px; color: #222; margin-top: 3px; }
+.r-contact { font-size: 10.5px; color: #222; margin-top: 6px; }
+.r-section { margin-top: 10px; }
+.r-section h2 { font-size: 12.5px; margin: 0 0 6px 0; font-weight: 700; }
 .r-job { margin-top: 6px; }
-.r-job-title { font-weight: 600; font-size: 12px; }
-.r-job-meta { font-size: 11px; color: #444; margin-bottom: 6px; }
-ul { margin: 6px 0 0 18px; }
+.r-job-title { font-weight: 600; font-size: 11.5px; }
+.r-job-meta { font-size: 10.5px; color: #444; margin-bottom: 6px; }
+ul { margin: 6px 0 0 14px; padding: 0; }
 li { margin-bottom: 6px; }
-.r-footer { margin-top: 18px; font-size: 11px; color: #333; }
+.r-footer { margin-top: 14px; font-size: 10px; color: #333; }
 
-/* Make sure links are visible on print */
+/* Make links visible on print */
 a { color: #111; text-decoration: underline; }
 
-/* Prevent page breaks inside list items */
-.r-section, .r-job { break-inside: avoid; }
+/* Prevent page breaks inside sections */
+.r-section, .r-job { break-inside: avoid; page-break-inside: avoid; }
 
+/* Remove visual-only decorations for print */
 @media screen {
-  /* For on-screen preview: show a subtle border */
-  .resume { box-shadow: 0 6px 20px rgba(0,0,0,0.08); background: #fff; padding: 18px; }
+  .resume { box-shadow: none; background: #fff; padding: 0; max-width: 800px; }
 }
