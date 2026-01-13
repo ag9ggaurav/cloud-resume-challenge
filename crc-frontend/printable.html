@@ -9,65 +9,87 @@
 <body>
   <div class="resume">
     <header class="r-header">
-      <div class="r-name">Abhishek Gaurav</div>
-      <div class="r-title">Senior DevOps / Backend / Platform Engineer</div>
-      <div class="r-contact">Pune, India • <a href="mailto:gauravabhishek234@gmail.com">gauravabhishek234@gmail.com</a> • <a href="https://linkedin.com/in/abhishek-gaurav-aa87a61b4">linkedin.com/in/abhishek-gaurav-aa87a61b4</a></div>
+      <h1 class="r-name">Abhishek Gaurav</h1>
+      <p class="r-title">Cloud • DevOps • Backend Engineer</p>
+      <p class="r-contact">
+        📍 Pune, India •
+        📧 <a href="mailto:gauravabhishek234@gmail.com">gauravabhishek234@gmail.com</a> •
+        🔗 <a href="https://linkedin.com/in/abhishek-gaurav-aa87a61b4">LinkedIn</a>
+      </p>
     </header>
 
     <section class="r-section">
-      <h2>Summary</h2>
-      <p>Platform engineer with 5+ years building scalable Kubernetes platforms, GPU infrastructure, and observability across AWS/GCP/Azure. Strong in Go, automation, and cost/reliability optimisation.</p>
+      <h2>About Me</h2>
+      <p>
+        Platform Engineer with <strong>5+ years</strong> building scalable systems in product companies. Expertise in <strong>GPU infrastructure, Kubernetes, cloud compliance</strong> (AWS/GCP/Azure), and <strong>observability</strong>. Strong focus on reliability, performance, and cost optimization.
+      </p>
     </section>
 
     <section class="r-section">
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> Go, Node.js, Python</p>
-      <p><strong>Cloud & Infra:</strong> AWS, GCP, Azure, Kubernetes, Docker, Minio</p>
-      <p><strong>GPU & Observability:</strong> NVIDIA MIG, H100/A100, OpenTelemetry, Datadog, Prometheus</p>
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> Go, Node.js, Python</li>
+        <li><strong>Cloud & Infrastructure:</strong> AWS, GCP, Azure, Kubernetes, Docker, Minio</li>
+        <li><strong>GPU & AI Infrastructure:</strong> NVIDIA MIG, H100, A100, LLMariner</li>
+        <li><strong>Observability:</strong> OpenTelemetry, Datadog, Grafana, Prometheus</li>
+        <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+        <li><strong>Tools & Platforms:</strong> Kafka, Backstage, OpenRouter API, Postman</li>
+      </ul>
     </section>
 
     <section class="r-section">
-      <h2>Experience</h2>
+      <h2>Professional Experience</h2>
 
       <div class="r-job">
-        <div class="r-job-title">SDE II — Platform Engineering, Gruve.ai</div>
-        <div class="r-job-meta">Oct 2024 — Present</div>
+        <h3 class="r-job-title">SDE II – Platform Engineering — Gruve.ai (Oct 2024 – Present)</h3>
         <ul>
-          <li>Built GPU Cluster Manager (Go/Kubernetes) with NVIDIA MIG partitioning — reduced GPU wastage by 40% (~$500K saved)</li>
-          <li>Delivered Inference-as-a-Service for LLMs (1M+ requests/month) and a standardized observability stack</li>
+          <li>Designed and built a <strong>high-performance GPU Cluster Manager</strong> using <strong>Go and Kubernetes</strong>, enabling <strong>dynamic NVIDIA MIG partitioning</strong> for <strong>H100 and A100 GPUs</strong>, reducing GPU resource wastage by <strong>40%</strong> and saving approximately <strong>$500K annually</strong></li>
+          <li>Developed a <strong>scalable observability platform</strong> integrating <strong>OpenTelemetry, Datadog, Splunk, Grafana, and Prometheus</strong>, enabling standardized metric onboarding and reducing monitoring setup time for onboarding metrics for any new microservices</li>
+          <li>Delivered a production-grade <strong>Inference-as-a-Service (IaaS)</strong> platform for <strong>LLM inference on Kubernetes</strong>, optimizing GPU usage.</li>
+          <li>Integrated <strong>OpenRouter API</strong> to provide seamless access to multiple LLM providers with improved observability and cost tracking</li>
+          <li>Architected and deployed <strong>vanilla Kubernetes clusters from scratch</strong>, including <strong>RAID-based server setup</strong> and <strong>Minio-backed NFS storage</strong></li>
+          <li>Evaluated and implemented <strong>Backstage Developer Portal</strong> for internal service catalog, self-service infrastructure, and improved developer experience of onboarding new microservices</li>
         </ul>
       </div>
 
       <div class="r-job">
-        <div class="r-job-title">Senior Engineer — Harman</div>
-        <div class="r-job-meta">Mar 2024 — Aug 2024</div>
+        <h3 class="r-job-title">Senior Engineer – Product Development — Harman (Mar 2024 – Aug 2024)</h3>
         <ul>
-          <li>Integrated Microsoft Entra ID and led backend integrations for enterprise claim systems</li>
+          <li>Conducted R&D and backend integration for a <strong>claim submission system</strong></li>
+          <li>Integrated <strong>Microsoft Entra ID</strong> for authentication and access management, improving security, compliance, and user experience</li>
+          <li>Collaborated with cross-functional teams to ensure secure and scalable backend design</li>
         </ul>
       </div>
 
       <div class="r-job">
-        <div class="r-job-title">Software Engineer — Uptycs</div>
-        <div class="r-job-meta">Dec 2020 — Feb 2024</div>
+        <h3 class="r-job-title">Software Engineer — Uptycs (Dec 2020 – Feb 2024)</h3>
         <ul>
-          <li>Built cloud compliance microservices in Go with real-time misconfiguration detection</li>
-          <li>Automated deployment and remediation workflows across AWS and Azure</li>
+          <li>Led development of <strong>cloud compliance backend microservices</strong> using <strong>Go</strong>, supporting <strong>AWS, GCP, and Azure</strong></li>
+          <li>Implemented <strong>real-time cloud misconfiguration detection</strong>, alerting, and compliance reporting</li>
+          <li>Built <strong>auto-remediation workflows</strong> using <strong>AWS Lambda</strong> and <strong>Azure Function Apps</strong>, significantly reducing security response times</li>
+          <li>Designed and maintained <strong>RESTful APIs</strong> using <strong>Node.js and Express</strong></li>
+          <li>Automated deployment pipelines for <strong>CloudFormation and ARM templates</strong>, ensuring consistent and reliable infrastructure provisioning</li>
+          <li>Contributed to <strong>scalable microservices architecture</strong> for cloud security and compliance platforms</li>
         </ul>
       </div>
     </section>
 
     <section class="r-section">
       <h2>Education</h2>
-      <p>B.E. Computer Science — Pune University (Jun 2021), SGPA: 9.47/10</p>
+      <p>
+        <strong>Bachelor of Engineering (Computer Science)</strong>
+
+        Pune University — 9.47 / 10 SGPA
+      </p>
     </section>
 
     <section class="r-section">
       <h2>Certifications</h2>
       <ul>
-        <li><a href="https://www.credly.com/badges/3631b5b9-44e6-46aa-b00e-dd78188ba066/">AWS Certified Solutions Architect</a></li>
-        <li><a href="https://certificates.automationanywhere.com/1beb6551-d3c0-4b66-bdfc-bd4213bf4788#acc.Dcjqgx6M">RPA Automation Anywhere Developer</a></li>
-        <li><a href="http://hackerrank.com/certificates/9cb781486c8f">HackerRank Certified REST API Developer</a></li>
-        <li><a href="https://www.udemy.com/certificate/UC-b4bf2539-9709-4251-a77b-0e147d6cec05/">Udemy GoLang Developer</a></li>
+        <li><a href="https://www.credly.com/badges/3631b5b9-44e6-46aa-b00e-dd78188ba066/" target="_blank">AWS Certified Solutions Architect</a></li>
+        <li><a href="https://certificates.automationanywhere.com/1beb6551-d3c0-4b66-bdfc-bd4213bf4788#acc.Dcjqgx6M" target="_blank">RPA Automation Anywhere Developer</a></li>
+        <li><a href="http://hackerrank.com/certificates/9cb781486c8f" target="_blank">HackerRank Certified REST API Developer</a></li>
+        <li><a href="https://www.udemy.com/certificate/UC-b4bf2539-9709-4251-a77b-0e147d6cec05/" target="_blank">Udemy Certified GoLang Developer</a></li>
       </ul>
     </section>
 
@@ -84,3 +106,4 @@
   </script>
 </body>
 </html>
+ 
